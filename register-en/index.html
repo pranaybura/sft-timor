@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+    <link rel="shortcut icon" href="//cdn.samsung.com/etc/designs/smg/global/imgs/favicon.ico">
+    <link rel="apple-touch-icon" href="//cdn.samsung.com/etc/designs/smg/global/imgs/app_ico.png" sizes="144x144">
+
+    <title>Enter your details - Samsung Solve for Tomorrow Samoa 2023</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <!-- <?!= include('index-css');?> -->
+</head>
+<body>
+    <!-- Hero Image -->
+    <div class="container-fluid remove-padding samsung-light-text samsung-black-bg">
+        <img class='img-fluid' src="https://images.samsung.com/is/image/samsung/assets/nz/solve-for-tomorrow-assets/solve-for-tomorrow-kv-with-text.jpg"/>
+    </div>
+    
+    <div class="container-fluid my-5 pb-5">
+
+        <div class="container-md">
+            <h2 class="samsung-h2">Samsung Solve for Tomorrow Entry Submission</h2>
+            <div class="samsung-left py-4" style="margin: 0 auto; max-width: 900px;">              
+                <p>To enter Solve for Tomorrow:</p>
+                <ul>
+                    <li>Complete the Solve for Tomorrow application form, and</li>
+                    <li>Upload your entry using one of the approved entry formats:
+                        <ul>
+                            <li>Written plan or essay (max 1,000 words)</li>
+                            <li>Poster, diagram, model, or artwork (submitted via PPT, PDF, video or jpg format)</li>
+                            <li>Presentation PowerPoint (max 10 slides)</li>
+                            <li>Video presentation (max 5 minutes)</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Some final tips for submitting your idea:</p>
+                <ul>
+                    <li>Final working prototypes are not required. However, we encourage you to outline or expand on how your idea could be developed further</li>
+                    <li>Use simple, conversational language to explain your idea to the judges</li>
+                    <li>Please read the <a href="">terms and conditions</a> in detail before submitting your idea</li>
+                    <li>Entries close at 11.59pm on DD MM YY. If you require additional support to complete your application form and idea submission, please email the Samsung team on <a href="mailto:support@solvefortomorrow.ws">support@solvefortomorrow.ws</a></li>
+                </ul>
+            </div>
+            <div class="pt-5 pb-2">
+                <h2 class="samsung-h3-medium samsung-center">Please complete the form below</h2>
+                <p class="samsung-p samsung-center pb-4">Required fields are marked with *</p>
+            </div>
+
+            <!-- Start Form -->
+
+            <!-- <?var url = getUrl();?> -->
+            <form style="margin: 0 auto; max-width: 900px;" id="inputForm" method="post" class="full-width" action="">
+                <div class="pb-4">
+
+                    <div class="row">
+                        <div class="col-sm input-container">
+                            <label for="first_name">Team Leader First Name*</label>
+                            <input type="text" name="first_name" id="first_name" required value="John">
+                        </div>
+                    
+                        <div class="col-sm input-container">
+                            <label for="last_name">Team Leader Last Name*</label>
+                            <input type="text" name="last_name" id="last_name" required value="Doe">
+                        </div>
+                    </div>
+
+                    <div class="row pt-3">
+                        <div class="col-sm input-container">
+                            <label for="date_of_birth">Date of Birth*</label>
+                            <input type="date" name="date_of_birth" id="date_of_birth" required value="2000-01-01">
+                        </div>
+    
+                        <div class="col-sm input-container">
+                            <label for="year_level">Year Level*</label>
+                            <select name="year_level" id="year_level" required>
+                                <option value="">Select a year level...</option>
+                                <option value="5">5</option>
+                                <option value="6" selected>6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="teacher">Teacher</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row pt-3">
+                        <div class="col-sm input-container">
+                            <label for="teacher">Teacher's Name</label>
+                            <input type="text" name="teacher" id="teacher" value="Mrs. Smith">
+                        </div>
+    
+                        <div class="col-sm input-container">
+                            <label for="school">School Name*</label>
+                            <input type="text" name="school" id="school" required value="ABC High School">
+                        </div>
+                    </div>
+
+                    <div class="row pt-3">
+                        <div class="col-sm input-container">
+                            <label for="contact_email">Contact Email*</label>
+                            <input type="email" name="contact_email" id="contact_email" required value="john.doe@example.com">
+                        </div>
+    
+                        <div class="col-sm input-container">
+                            <label for="confirm_email">Confirm Contact Email*</label>
+                            <input type="email" name="confirm_email" id="confirm_email" required onchange="checkEmailMatch()" value="john.doe@example.com">
+                        </div>
+                    </div>
+    
+                    <div class="row pt-3">
+                        <div class="col-sm input-container">
+                            <label for="contact_phone">Contact Phone Number*</label>
+                            <input type="tel" name="contact_phone" id="contact_phone" required value="123-456-7890">
+                        </div>
+    
+                        <div class="col-sm input-container">
+                            <label for="team_members">Number of Team Members*</label>
+                            <select name="team_members" id="team_members" required>
+                                <option value="">Select number of team members...</option>
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7+">7+</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="row pt-3">
+                        <div class="col-sm input-container">
+                            <label for="how_found">How did you find out about the Solve for Tomorrow competition?</label>
+                            <select name="how_found" id="how_found" required>
+                                <option value="">Select an option...</option>
+                                <option value="Through school" selected>Through school</option>
+                                <option value="MOTAT">MOTAT</option>
+                                <option value="Poster/Flyer">Poster/Flyer</option>
+                                <option value="Word of mouth">Word of mouth</option>
+                                <option value="Samsung Website">Samsung Website</option>
+                                <option value="News">News</option>
+                                <option value="Others">Others (please specify)</option>
+                            </select>
+                        </div>
+    
+                        <div class="col-sm input-container" id="howFoundOtherContainer">
+                            <label for="how_found_other">Other(if applicable)</label>
+                            <input type="text" name="how_found_other" id="how_found_other" value="Through friends">
+                        </div>
+                    </div>
+    
+                    <div class="row pt-3">
+                        <div class="col-sm input-container">
+                            <label for="entry_name">Entry Name*</label>
+                            <input type="text" name="entry_name" id="entry_name" required value="Innovative Solution">
+                        </div>
+    
+                        <div class="col-sm input-container">
+                            <label for="teacher_email">Teacher's Email*</label>
+                            <input type="email" name="teacher_email" id="teacher_email" value="teacher@example.com">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pb-5" style="margin: 0 auto; max-width: 600px;" id="teamMembersContainer">
+                    <!-- The dynamically added team member inputs will go here -->
+                </div>
+            
+                <div class="container">
+                    <button class="samsung-button-black cta-button mb-4" type="button" id="addTeamMemberButton">Add Another Team Member</button>
+                    <p class="warning" id="teamMemberWarning" style="color: brown;">A minimum of 1 team member is required.</p>
+                </div>
+
+
+                <div class="samsung-left pt-4 pb-4" style="margin: 0 auto; max-width: 650px;">
+                    <p>Please upload your submission in one of the following formats:</p>
+                    <ul>
+                        <li>Written plan or essay (max 1,000 words)</li>
+                        <li>Poster, diagram, model, or artwork (submitted via PPT, PDF, video, or jpg format)</li>
+                        <li>Presentation PowerPoint (max 10 slides)</li>
+                        <li>Video presentation (max 5 minutes)</li>
+                    </ul>
+                </div>
+                <div style="margin: 0 auto; max-width: 430px;">
+                    <input class="samsung-button-black cta-button samsung-button-big mb-3" type="file" name="file_uploaded" id="file_uploaded" max="31457280" accept=".webm, .flv, .mkv, .html5, .mpeg2, .avi, .mp4, .mov, .pptm, .ppt, .pptx, .jpg, .jpeg, .png, .pdf, .video" onchange="LoadFile(event)" required>
+                    <p class="file-size-info">*Maximum file size is 30MB. If your submission file is larger, please upload your file to <a href="https://wetransfer.com/">WeTransfer,</a> and share the link in the feedback field below.</p>
+                </div>
+
+                <div class="my-5" style="margin: 0 auto; max-width: 800px;">
+                    <label for="feedback">Paste the optional WeTransfer link below</label>
+                    <textarea name="feedback" id="feedback" rows="7" cols="20" style="width: 100%;"></textarea>
+                </div>
+
+                <div class="container samsung-left pt-4 pb-4" style="margin: 0 auto; max-width: 800px;">
+                    <div class="consent-group">
+                        <input type="checkbox" name="consent_1" id="consent_1" required>
+                        <label for="consent_1">I have the consent of my parent or guardian to enter Solve for Tomorrow. *</label>
+                    </div>
+                    <div class="consent-group">
+                        <input type="checkbox" name="consent_2" id="consent_2" required>
+                        <label for="consent_2">Please check this box to confirm you have read our <a href="">terms and conditions</a> and <a href="">privacy policy.</a> *</label>
+                    </div>
+                    <div class="consent-group">
+                        <input type="checkbox" name="consent_3" id="consent_3"  required>
+                        <label  for="consent_3">I would like to receive Samsung promotional material. Rest assured, we'll keep all your information strictly confidential. You can opt-out at any time by clicking the unsubscribe button on emails you receive.</label>
+                    </div>
+                </div>
+
+                <input type="hidden" id="fileData" name="fileData" />
+                <input type="hidden" id="mimeType" name="mimeType" />
+                <input type="hidden" id="fileName" name="fileName" />
+                
+                <div class="container input-container">
+                    <button class='samsung-button-black cta-button samsung-button-big' type="submit" id="submitButton">SUBMIT ENTRY</button>
+                </div>
+
+            </form>
+
+            <!-- End Form -->
+        </div>
+    </div>
+
+    <!-- <?!= include('script-js');?> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>  
+    <script>
+        function checkEmailMatch() {
+          var contactEmail = document.getElementById("contact_email").value;
+          var confirmEmail = document.getElementById("confirm_email").value;
+      
+          if (contactEmail !== confirmEmail) {
+            alert("Contact Email and Confirm Email do not match.");
+          }
+        }
+      
+        function LoadFile(event) {
+            var file = event.target.files[0];
+            if(file.size > 30 * 1024 * 1024) {
+                document.getElementById("file_uploaded").value = ''
+                document.getElementById("fileData").value = '';
+                document.getElementById("mimeType").value = '';
+                document.getElementById("fileName").value = '';
+                alert('File size exceeds the maximum limit of 30MB.');
+            } else {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                // console.log(e.target.result);
+                var fileData = e.target.result.substr(e.target.result.indexOf(",")+1);
+                var mimeTypeStart = e.target.result.indexOf("data:") + 5;
+                var mimeTypeEnd = e.target.result.indexOf(";");
+                var mimeType = e.target.result.substr(mimeTypeStart, mimeTypeEnd - mimeTypeStart);
+                var fileName = file.name;
+                document.getElementById("fileData").value = fileData;
+                document.getElementById("mimeType").value = mimeType;
+                document.getElementById("fileName").value = fileName;
+                };    
+                reader.readAsDataURL(file);
+            }
+        }
+      
+        document.addEventListener('DOMContentLoaded', () => {
+            const inputForm = document.getElementById('inputForm');
+            const fileUploader = document.getElementById('file_uploaded');
+            const teamMembersContainer = document.getElementById('teamMembersContainer');
+            const teamMemberWarning = document.getElementById('teamMemberWarning');
+    
+            let teamMemberCount = 0;
+        
+            inputForm.addEventListener('submit', (event) => {
+                // event.preventDefault(); // Prevent the default form submission
+        
+                // Validate file size (max 30MB = 30 * 1024 * 1024 bytes)
+                if (fileUploader.files.length > 0 && fileUploader.files[0].size > 30 * 1024 * 1024) {
+                    alert('File size exceeds the maximum limit of 30MB.');
+                    fileUploader.value = '';
+                    return;
+                }
+    
+                // Validate required inputs
+                const requiredInputs = inputForm.querySelectorAll('input[required], select[required], textarea[required]');
+                for (const input of requiredInputs) {
+                    if (!input.value.trim()) {
+                        alert('Please fill out all required fields.');
+                        return;
+                    }
+                }
+    
+                // Rename the file with a timestamp and update the form data
+                if (fileUploader.files.length > 0) {
+                    const file = fileUploader.files[0];
+                    const timestamp = new Date().getTime();
+                    const newName = `${timestamp}.` + file.name.split('.').pop();
+                    console.log(`Renamed file: ${newName}`);
+                    const formData = new FormData(inputForm);
+                    formData.set('fileUploader', file, newName);
+                    logFormData(formData);
+                } else {
+                    logFormData(new FormData(inputForm));
+                }
+            });
+        
+            // Function to log all form data to the console
+            function logFormData(formData) {
+                const data = {};
+                formData.forEach((value, key) => {
+                    data[key] = value;
+                });
+                console.log('Form data:', data);
+            }
+        
+            const addTeamMemberButton = document.getElementById('addTeamMemberButton');
+            addTeamMemberButton.addEventListener('click', () => {
+                teamMemberCount++;
+    
+                const teamMemberDiv = document.createElement('div');
+                teamMemberDiv.classList.add('input-container', 'team-member');
+                teamMemberDiv.dataset.teamMember = teamMemberCount;
+                teamMemberDiv.innerHTML = `
+                    <button type="button" class="samsung-left close-button" style="width:100% max-width:100px" onclick="deleteTeamMember(${teamMemberCount})">Remove a Team Member</button>
+                    <label for="team_member_name_${teamMemberCount}">Team Member Name*</label>
+                    <input type="text" name="team_member_name_${teamMemberCount}" id="team_member_name_${teamMemberCount}" required>
+                    <label for="team_member_year_level_${teamMemberCount}">Year Level</label>
+                    <select name="team_member_year_level_${teamMemberCount}" id="team_member_year_level_${teamMemberCount}" >
+                        <option value="">Select year level...</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="teacher">Teacher</option>
+                    </select>
+                    <label for="team_member_school_name_${teamMemberCount}">School Name*</label>
+                    <input type="text" name="team_member_school_name_${teamMemberCount}" id="team_member_school_name_${teamMemberCount}" required>
+                    <label for="team_member_school_address_${teamMemberCount}">School Address</label>
+                    <input type="text" name="team_member_school_address_${teamMemberCount}" id="team_member_school_address_${teamMemberCount}" >
+                `;  
+    
+                teamMembersContainer.appendChild(teamMemberDiv);
+                teamMemberWarning.style.display = 'none';
+            });
+        
+            teamMembersContainer.addEventListener('click', (event) => {
+                const target = event.target;
+                if (target.classList.contains('close-button')) {
+                    const teamMemberId = target.dataset.teamMember;
+                    deleteTeamMember(teamMemberId);
+                }
+            });
+        });
+      
+        function deleteTeamMember(memberId) {
+            const teamMemberDiv = document.querySelector(`[data-team-member="${memberId}"]`);
+            if (teamMemberDiv) {
+                teamMemberDiv.remove();
+                teamMemberCount--;
+                teamMemberWarning.style.display = teamMemberCount > 0 ? 'none' : 'block';
+            }
+        }
+      
+    </script>
+</body>
+</html>
